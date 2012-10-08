@@ -34,11 +34,11 @@ For each directory and each function (e.g. exp), there are two files:
   useful when looking for the most accurate approximation in a given
   computational budget.
 
-* `lb_error-degree-error-non_zero-non_one-non_two-constant` sorts by
-  log-error, degree, maximal error, and then reports the
-  characteristics of the multipliers and of the constant offset.  This
-  file is better suited to determining the most efficient
-  approximation given an accuracy goal.
+* `exp-lb_error-degree-error-non_zero-non_one-non_two-constant` sorts
+  by log-error, degree, maximal error, and reports the characteristics
+  of the multipliers and of the constant offset.  This file is better
+  suited to determining the most efficient approximation given an
+  accuracy goal.
 
 All the files have the same structure: first, a one-line summary of
 its contents -- in particular the approximated function, the range
@@ -46,7 +46,7 @@ considered in the optimisation, and the maximal degree --, a header,
 and, finally, the approximations, one approximation per (very long)
 line.  Each approximation line first includes the performance and
 accuracy metrics, then a pipe (|), the coefficients in float format
-(in order, for `x**0`, `x**1`, `x**2`, etc), a pipe, the same in
+(in order, for `x**0`, `x**1`, `x**2`, etc.), a pipe, the same in
 rational form, a pipe, and an unique identifier.
 
 The unique identifier is made of the approximated function's name,
@@ -56,6 +56,6 @@ endian).  The identifier is useful to refer to approximations, and to
 make sure that your language implementation is parsing floats
 correctly.
 
-Future versions will likely split the directory to report
+Future versions will likely split the directories to report
 approximations that optimise relative or absolute error, and to
 include rational polynomial approximations as well.
