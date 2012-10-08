@@ -68,3 +68,6 @@ and whether the constant offset is 0, 1, 2, or other).
 Future versions will likely split the directories to report
 approximations that optimise relative or absolute error, and to
 include rational polynomial approximations as well.
+
+More information is up at
+http://pvk.ca/Blog/2012/10/07/the-eight-useful-polynomial-approximations-of-sinf-3/
