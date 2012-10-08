@@ -19,11 +19,11 @@ multiplication by three or other integers doesn't seem exploitable: FP
 multipliers on current x86 are nearly as fast as adders.
 
 Accuracy is measured with the maximal absolute error over the
-considered input range; a rounded base-2 logarithm (lb_error) is also
+considered input range; a rounded base-2 logarithm (`lb_error`) is also
 reported, to distribute accuracy in discrete buckets.
 
-The single/ directory reports values for single float approximations,
-and double/ for double float approximations.
+The `single/` directory reports values for single float approximations,
+and `double/` for double float approximations.
 
 For each directory and each function (e.g. exp), there are two files:
 
