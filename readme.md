@@ -56,6 +56,15 @@ endian).  The identifier is useful to refer to approximations, and to
 make sure that your language implementation is parsing floats
 correctly.
 
+In theory, if an approximation isn't listed in these files, it's not
+more interesting that at least one of the approximation that is in the
+files.  An approximation is uninteresting if it has really bad
+accuracy (more error than an approximation with a degree lower by
+three), or is less accurate than an approximation with coefficients
+that are at least as efficient to compute (this is conservatively
+approximated with the number of 0, 0-or-1 and 0-or-1-or-2 multipliers,
+and whether the constant offset is 0, 1, 2, or other).
+
 Future versions will likely split the directories to report
 approximations that optimise relative or absolute error, and to
 include rational polynomial approximations as well.
